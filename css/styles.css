@@ -245,6 +245,83 @@ body {
   background-color: var(--titel-text-color);
 }
 
+.modal-titel {
+  display: block;
+  margin-top: 40px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
+.backdrop-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 448px;
+}
+
+.backdrop-lable {
+  display: block;
+}
+
+.backdrop-lable input {
+  width: 100%;
+  margin-top: 28px;
+  padding: 11px 12px;
+}
+
+.backdrop-lable input:first-child {
+  margin-top: 30px;
+}
+
+.backdrop-lable textarea {
+  width: 100%;
+  padding: 0;
+  margin-top: 28px;
+  resize: none;
+}
+
+.btest2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btest {
+  font-size: 14px;
+  line-height: 24px;
+
+  color: var(--secondary-text-color);
+}
+
+.send-btn {
+  display: block;
+  padding: 10px 55px;
+  margin: 30px auto 40px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border: transparent;
+  cursor: pointer;
+
+  transition: background-color 250ms var(--animation-timing);
+
+  background-color: var(--accent-color);
+  color: var(--titel-text-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.send-btn:hover {
+  background-color: #188ce8;
+}
+
 /* Преимущества */
 .visually-hidden {
   position: absolute;
@@ -584,7 +661,7 @@ body {
 }
 
 .social-link-footer {
-  margin: 0;
+  margin: 0 93px 0 0;
   display: flex;
   padding: 0;
 }
@@ -606,6 +683,45 @@ body {
 
 .item .social-link {
   fill: var(--titel-text-color);
+}
+
+.footer-label input {
+  width: 358px;
+  padding: 15px 16px;
+  margin: 0;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  color: var(--titel-text-color);
+  background-color: #2f303a;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.footer-label input::placeholder {
+  font-size: 16px;
+  line-height: 20px;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.mailing-btn {
+  padding: 10px 29px;
+  margin: 0 0 0 12px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+  background-color: var(--accent-color);
+  color: var(--titel-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: transparent;
+  border-radius: 4px;
 }
 
 /* ПОРТФОЛИО */

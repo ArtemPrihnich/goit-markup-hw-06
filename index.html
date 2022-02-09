@@ -104,12 +104,32 @@
         <!-- Backdrop -->
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
+                <b class="modal-titel">Оставьте свои данные, мы вам перезвоним</b>
                 <button class="close-btn" data-modal-close>
                     <svg width="30px" height="30px">
                         <use href="images/symbol-defs.svg#close-btn">
                         </use>
                     </svg>
                 </button>
+                <form class="backdrop-form">
+                    <label class="backdrop-lable">
+                        <input type="text" name="name">
+                    </label>
+                    <label class="backdrop-lable">
+                        <input type="tel" name="tel">
+                    </label>
+                    <label class="backdrop-lable">
+                        <input type="email" name="email">
+                    </label>
+                    <label class="backdrop-lable">
+                        <textarea name="comment" rows="6"></textarea>
+                    </label>
+                    <label class="btest2">
+                        <input type="checkbox" name="user-agreement">
+                        <span class="btest">Соглашаюсь с рассылкой и принимаю Условия договора</span>
+                    </label>
+                </form>
+                <button class="send-btn" type="submit">Отправить</button>
             </div>
         </div>
 
@@ -395,12 +415,11 @@
             </div>
             <div>
                 <p class="join-text">подпишитесь на рассылку</p>
-                <form name="mailing-list" autocomplete="on">
-                    <label>
-                        почта
-                        <input type="email" name="email">
-                        <button type="submit">Подписаться</button>
+                <form style="display: flex;" name="mailing-list" autocomplete="off">
+                    <label class="footer-label">
+                        <input type="email" name="email" placeholder="E-mail">
                     </label>
+                    <button class="mailing-btn" type="submit">Подписаться</button>
                 </form>
             </div>
         </div>
