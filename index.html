@@ -106,27 +106,44 @@
             <div class="modal">
                 <b class="modal-titel">Оставьте свои данные, мы вам перезвоним</b>
                 <button class="close-btn" data-modal-close>
-                    <svg width="30px" height="30px">
-                        <use href="images/symbol-defs.svg#close-btn">
+                    <svg width="18px" height="18px">
+                        <use href="images/symbol-defs.svg#close-black">
                         </use>
                     </svg>
                 </button>
-                <form class="backdrop-form">
-                    <label class="backdrop-lable">
-                        <input type="text" name="name">
-                    </label>
-                    <label class="backdrop-lable">
-                        <input type="tel" name="tel">
-                    </label>
-                    <label class="backdrop-lable">
-                        <input type="email" name="email">
-                    </label>
-                    <label class="backdrop-lable">
-                        <textarea name="comment" rows="6"></textarea>
-                    </label>
-                    <label class="btest2">
-                        <input type="checkbox" name="user-agreement">
-                        <span class="btest">Соглашаюсь с рассылкой и принимаю Условия договора</span>
+                <form class="backdrop-form" autocomplete="off">
+                    <div class="form-field">
+                        <label for="name">Имя</label>
+                        <input type="text" name="name" id="name" autofocus>
+                        <svg class="backdrop-svg" width="18px" height="18px">
+                            <use href="./images/symbol-defs.svg#person-black">
+                            </use>
+                        </svg>
+                    </div>
+                    <div class="form-field">
+                        <label for="tel">Телефон</label>
+                        <input type="tel" name="tel" id="tel">
+                        <svg class="backdrop-svg" width="18px" height="18px">
+                            <use href="./images/symbol-defs.svg#phone-black">
+                            </use>
+                        </svg>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Почта</label>
+                        <input type="email" name="email" id="email">
+                        <svg class="backdrop-svg" width="18px" height="18px">
+                            <use href="./images/symbol-defs.svg#email-black">
+                            </use>
+                        </svg>
+                    </div>
+                    <div class="form-field">
+                        <label for="comment">Коментарий</label>
+                        <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
+                    </div>
+                    <label class="checkbox-label">
+                        <input class="checkbox" type="checkbox" name="user-agreement" value="html">
+                        <span class="icon"></span>
+                        <span class="accept">Соглашаюсь с рассылкой и принимаю <a class="conditions" href="#">Условия договора</a></span>
                     </label>
                 </form>
                 <button class="send-btn" type="submit">Отправить</button>
@@ -415,7 +432,7 @@
             </div>
             <div>
                 <p class="join-text">подпишитесь на рассылку</p>
-                <form style="display: flex;" name="mailing-list" autocomplete="off">
+                <form class="footer-form" name="mailing-list" autocomplete="off">
                     <label class="footer-label">
                         <input type="email" name="email" placeholder="E-mail">
                     </label>
